@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+:root{
+    --cor-doce: #e25947e5;   
+    --font-color: rgb(241, 225, 153);
+    --cor-gunter: #140d1a;
+    --cor-pata: #f0a12a;
+    --cor-segu: #f7e2ba;
+    --cor-marronzin: #735c4b;
+}
+a{  
+    user-select: none;
+    text-decoration: none;
+}
+body{
+    background-image: url('/imagens/doce-back.jpg');
+}
+.text-card p{
+    color: white;
+    padding: 0.5em;
+}
+.text-card h2{
+    color: white;
+}
+/* Header */
+header{
+    border-bottom: solid 3px #dbdbdb5d;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 200ms;
+}
+    header a{
+        
+        color: var(--font-color);
+        font-size: 1.5rem;
+        transition: 0.4s;
+    }
+    
+    header a:hover{
+        transform: scale(1.2);
+        color: var(--cor-segu);
+    }
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    padding: 20px;
+    margin-right: 70px;
+}
+
+.logo{
+    padding: 5px;
+    padding-left: 20px;
+}
+    .logo img{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        width: 100px;
+        height: 100px;
+    }
+
+/*Login*/
+
+.login{
+    display: flex;
+    visibility: hidden;
+    filter: opacity(0%);
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    place-content: center;
+    right: -500px;
+    transition: 0.4s;
+    gap: 3px;
+    background-color: #dc90ff;
+    padding: 20px;
+    border-radius: 20px;
+    animation-duration: 0.8s;
+    height: 200px;
+    z-index: 5;
+}
+
+.on{
+     visibility: visible;
+    filter: opacity();
+   right: 40px;
+     display: flex;
+     flex-direction: column;
+
+}
+.on div{
+    background-color: #eabbff;
+    border-radius: 20px;
+    border: solid 1px rgb(255, 212, 212);
+}
+.login input{
+    margin-left: 3px;
+    height: 20px;
+    background-color: #dbdbdb00;
+    padding: 10px;
+    border: none;
+    border-style: none;
+    outline: none;
+    width: 100%;
+
+}
+
+.butaum{
+    display: none;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: 0.8s;
+    animation-duration: 0.8s;
+}
+
+.butaum:hover{
+    transform: scale(1.2);
+}
+
+/* Main */
+
+main{
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+ h1{
+    color: #fffdfa;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Menu{
+    color: #dcfff1;
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 0;
+    background-color:#5E4B8B;
+}
+
+.card-container{
+    width: 50%;
+    padding-top: 1%;
+    margin: auto;
+    background-color: #5E4B8B;
+    border-radius: 30px;
+}
+.imagem{
+    background-image: url('/imagens/doce-back.jpg');
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.texto-parent{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.gradiente{
+    background-image: linear-gradient(to bottom, rgb(26, 0, 43), rgba(0, 0, 0, 0));
+    z-index: -1;
+    width: 100%;
+    height: 400px;
+}
+
+.local h2{
+    font-size: 50px;
+}
+.local{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 30px;
+    background-color: #5E4B8B;
+}
+/* Carrossel */
+.swipers{
+    padding-top: 1em;
+    color: #13181e;
+    z-index: 1;
+    background-color: #FADADD;
+    position: inherit;
+}
+.text-card{
+    margin-bottom: 50px ;
+}
+
+.image-card img{
+    aspect-ratio: 16 / 9;
+    width:80%;
+    height: auto;
+}
+.text-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.button{
+    width: 20em;
+    height: 5em;
+    border-radius: 50px;
+    cursor: pointer;
+ transition: 0.8s;
+ margin: auto;
+}
+.text-card p{
+    margin: 0;
+}
+.text-card .button{
+    width: 30%;
+    height: auto;
+    aspect-ratio: 21/9;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    transform: scale(1.2);
+}
+.Maps iframe{
+    aspect-ratio: 16 / 9;
+    width:80%;
+    height: auto;
+
+}
+/* Footer */
+footer{
+    color: white;
+}
+footer h2{
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 3px solid #dbdbdb5d;
+    
+}
+footer h3{
+    margin-top: 1em;
+}
+.contatos{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    padding-inline: 2em;
+}
+.contatos h3{
+    font-size: 30px;
+}
+.contatos i{
+    font-size: 25px;
+}
+.contatos a{
+    color: white;
+    transition: 0.8s;
+}
+.contatos a:hover{
+    transform: scale(1.2);
+}
+.coisas{
+    padding-left: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.coisas a{
+    color: white;
+    transition: 0.8s;
+}
+.coisas a:hover{
+    transform: scale(1.2);
+}
+.seil{
+    display: flex;
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.gradiente2{
+    background-image: linear-gradient(to top, rgb(26, 0, 43), rgba(0, 0, 0, 0));
+    z-index: -1;
+    width: 100%;
+}
+
+
+/* Media query*/
+@media screen and (max-width: 768px) {
+    .butaum{
+        display: block;
+    }
+    nav{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        height: 100dvh !important;
+        width: 30vh;
+        flex-direction: column;
+        top: 20px;
+        z-index: 50;
+        margin-left: -100vw;
+        align-items: center;
+        transition: 0.8s;
+    }
+    #abrir{
+        padding-left: 1em;
+    }
+
+}
