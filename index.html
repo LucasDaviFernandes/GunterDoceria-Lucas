@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunter Doceria</title>
+    <link rel="shortcut icon" href="imagens/Gunter.png" type="image/png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="imagem"><div class="gradiente"></div></div>
+    <header>
+      <button id="abrir" class="butaum"><i class="fa-solid fa-bars"></i></button>
+        <div class="logo">
+            <img src="imagens/Gunter.png" alt="">
+        </div>
+
+
+        <nav>
+
+            <button id="fechar" class="butaum"><i class="fa-solid fa-x"></i></button>
+            <a href="" onclick="return false;">Menu</a>
+            <a href="" onclick="return false;">Local</a>
+            <a href="#Contatos" onclick="return false;">Contatos</a>
+            <a class='activation' href="" onclick="return false;">Login</a>
+
+        </nav>
+    </header>
+    <div class="login" >
+                <label for="nome">Nome</label>
+               <div><input id="nome" type="password"></div>
+
+                <label for="senha">Senha</label>
+                <div><input id="senha" type="password"></div>
+                <button class="acessar">Entrar</button>
+                <p>Para consegui o Nome e Senha, vá até os links abaixo:</p>
+                <p>Nome: <a href="">Portfólio Carlos</a></p>
+                <p>Senha: <a href="">Portfólio Lucas</a></p>
+            </div>
+      <div class="texto-parent">
+            <h1>Bem vindo a Gunter Doceria</h1>
+        </div>
+    </div>
+
+    <main>
+             <h2 class="Menu">Menu</h2>
+
+        <!--Carrossel-->
+    <section class="swipers">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">    
+            <!--Meu card fica aqui-->
+            <div class="centralizador-cont">
+              <div class="card-container">
+              <span class="card">
+                  <div class="image-card">
+                      <img src="https://moinhoglobo.com.br/wp-content/uploads/2016/02/49-cupcake-rosa-scaled.jpg"   alt="Spazio-Imperatriz" id="imagem-swipers" >
+                  </div>
+                  <div class="text-container">
+                      <div class="text-card">
+                        <h2>Cupcake de Brigadeiro Rosa - 200g</h2>
+                        <p>Feito com ingredientes selecionados, esse doce combina tradição e carinho em cada mordida.</p>
+                        <p>R$7,00</p>
+                        <button class="button">Comprar já</button>
+                      </div>
+                  </div>
+              </span>
+            </div>
+            </div>
+            </div>
+            <!--Finaliza aqui-->
+          
+          <!--Aqui se finaliza o card-->
+        
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="local">
+        <h2>Local:</h2>
+        <div class="Maps"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d433.88072758680534!2d-41.975542427963184!3d-22.823024007572194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDQ5JzIyLjkiUyA0McKwNTgnMzEuNiJX!5e0!3m2!1spt-BR!2sbr!4v1748538239804!5m2!1spt-BR!2sbr" width="600" style="border:0; aspect-ratio: 16/9; height: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+    </section>
+    </main>
+
+    <footer>
+        <div class="gradiente2">
+        <h2>A melhor doceria do Brasil</h2>
+
+        <div class="contatos">
+            <a target="_blank" href="Adicionais/direitos.html">
+              <h3>Direitos Garantidos</h3>
+            </a>
+            <div class="seil">
+                <h3 id="Contatos">Contatos</h3>
+                <div class="icons">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="coisas">
+            <a href="Adicionais/licencas.html">Licença</a>
+            <a href="Adicionais/termos.html">Termos do Serviço</a>
+            <a href="Adicionais/privacidade.html">Política de Privacidade</a>
+        </div>
+        <h3>@Developed By: Carlos Ramirez Copque da Silva & Lucas Davi dos Santos Fernandes</h3>
+</div>
+    </footer>
+    
+    <script type="module" src="script/script.js"></script>
+
+    <!--Funções do carrossel (em baixo)-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Carrosel ainda só que parte editável da bibloteca-->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        keyboard: {
+          enabled: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script> 
+       
+</body>
+</html>
