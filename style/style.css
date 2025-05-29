@@ -16,7 +16,7 @@ a{
     text-decoration: none;
 }
 body{
-    background-image: url('../imagens/doce-back.jpg');
+    background-image: url('/imagens/doce-back.jpg');
 }
 .text-card p{
     color: white;
@@ -166,7 +166,7 @@ main{
     border-radius: 30px;
 }
 .imagem{
-    background-image: url('../imagens/doce-back.jpg');
+    background-image: url('/imagens/doce-back.jpg');
     position: absolute;
     z-index: -2;
     width: 100%;
